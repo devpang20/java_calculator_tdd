@@ -41,4 +41,15 @@ class CalcApplicationTests {
 	}
 
 
+
+	@Test
+	@DisplayName("3 - 1 == 2")
+	void t6() {
+		assertThat(CalcApp.run("3 - 1")).isEqualTo(2);
+	}
+	@Test
+	@DisplayName("100 - 20 == 80")
+	void t7() {
+		assertThat(CalcApp.run("100 - 20")).isEqualTo(80);
+	}
 }
