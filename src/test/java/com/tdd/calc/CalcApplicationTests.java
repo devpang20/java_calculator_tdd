@@ -18,7 +18,7 @@ class CalcApplicationTests {
 
 	@Test
 	@DisplayName("2 + 1 == 3")
-	void t2 () {
+	void t2() {
 		assertThat(CalcApp.run("2 + 1")).isEqualTo(3);
 	}
 
