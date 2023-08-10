@@ -64,4 +64,10 @@ class CalcApplicationTests {
 	void t9() {
 		assertThat(CalcApp.run("1 * 7")).isEqualTo(7);
 	}
+
+	@Test
+	@DisplayName("10 / 2 == 5")
+	void t10() {
+		assertThat(CalcApp.run("10 / 2")).isEqualTo(5);
+	}
 }
