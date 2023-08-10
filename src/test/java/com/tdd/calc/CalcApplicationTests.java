@@ -31,6 +31,14 @@ class CalcApplicationTests {
 	@Test
 	@DisplayName("1000 + 280 == 1280")
 	void t4 () {
-		assertThat(CalcApp.run("1000 + 280 == 1280")).isEqualTo(1280);
+		assertThat(CalcApp.run("1000 + 280")).isEqualTo(1280);
 	}
+
+	@Test
+	@DisplayName("2 - 1 == 1")
+	void t5() {
+		assertThat(CalcApp.run("2 - 1")).isEqualTo(1);
+	}
+
+
 }
