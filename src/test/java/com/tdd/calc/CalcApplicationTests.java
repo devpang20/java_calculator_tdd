@@ -52,4 +52,16 @@ class CalcApplicationTests {
 	void t7() {
 		assertThat(CalcApp.run("100 - 20")).isEqualTo(80);
 	}
+
+	@Test
+	@DisplayName("9 * 5 == 45")
+	void t8() {
+		assertThat(CalcApp.run("9 * 5")).isEqualTo(45);
+	}
+
+	@Test
+	@DisplayName("1 * 7 == 7")
+	void t9() {
+		assertThat(CalcApp.run("1 * 7")).isEqualTo(7);
+	}
 }

@@ -4,6 +4,7 @@ public class CalcApp {
     public static int run(String exp) {
         boolean needToPlus = exp.contains("+");
         boolean needToMinus = exp.contains("-");
+        boolean needToMulti = exp.contains("*");
 
         String[] bits = null;
 
@@ -11,6 +12,8 @@ public class CalcApp {
             bits = exp.split(" \\+ ");
         } else if (needToMinus) {
             bits = exp.split(" \\- ");
+        } else if (needToMulti) {
+            bits = exp.split(" \\* ");
         }
 
         int a = Integer.parseInt(bits[0]);
@@ -20,6 +23,8 @@ public class CalcApp {
             return a + b;
         } else if (needToMinus) {
             return a - b;
+        } else if (needToMulti) {
+            return a * b;
         }
 
         throw new RuntimeException("올바른 계산식이 아닙니다.");
